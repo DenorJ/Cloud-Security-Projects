@@ -1,0 +1,51 @@
+Lab 01: Role-Based Access Control using Microsoft Azure
+
+Implementing Role-Based Access Control (RBAC) using Microsoft Azure.
+
+Step 1: Define Roles and Access Requirements
+First, I identify the roles within our organisation, such as Admin, Developer, Auditor, or Network Manager. Then, I determine the specific permissions each role needs.
+
+Step 2: Use Built-In Roles or Create Custom Roles
+Next, I check Azure’s built-in roles to see if any of them meet our needs. If they do, I use them. If not, I create custom roles tailored to our requirements.
+
+Step 3: Assign Roles to Users or Groups
+I navigate to the Azure Portal and sign in.
+
+I select the resource group, subscription, or resource I want to manage access for.
+
+I click on “Access control (IAM)”.
+
+I click on “+ Add” and then “Add role assignment”.
+
+I select the role I want to assign.
+
+I choose the user, group, or service principal to whom I want to assign the role.
+
+Step 4: Scope the Role Assignment
+I specify the scope of the role assignment, such as a specific resource group, subscription, or resource.
+
+Step 5: Verify Access Control Settings
+Finally, I test the access control settings to ensure that users have the appropriate access based on their roles. I verify that users can perform the actions allowed by their roles and are restricted from actions not permitted.
+
+Example Scenario
+Suppose I want to grant a user named “Joy Grace” the ability to manage virtual machines in a specific resource group. Here’s what I do:
+
+I sign in to the Azure Portal.
+
+I go to “Resource groups” and select the resource group I want to manage.
+
+I click on “Access control (IAM)”.
+
+I click on “+ Add” and then “Add role assignment”.
+
+I choose the “Virtual Machine Contributor” role.
+
+I enter “Joy Grace” in the search box and select him.
+
+I review the assignment details and click “Save” to confirm.
+
+By following these steps, I can effectively implement RBAC in any Azure environment.
+
+
+
+
