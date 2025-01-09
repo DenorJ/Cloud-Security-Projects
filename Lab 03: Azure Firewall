@@ -1,0 +1,37 @@
+Here's a step-by-step guide to how I completed the tasks for installing Azure Firewall and its advantages for an organization:
+Task 1: Use a Template to Deploy the Lab Environment
+I started by logging into the Azure Portal.
+I navigated to the "Deploy a custom template" section.
+I selected a predefined template that included the necessary components for a virtual network with a workload subnet and a jump host subnet.
+After customizing the parameters as needed, I deployed the template which set up the environment.
+Task 2: Deploy an Azure Firewall
+I went to the "Create a resource" section in the Azure Portal.
+I searched for "Firewall" and selected "Azure Firewall."
+I filled in the required details like the resource group and name, and chose the virtual network created in Task 1.
+I reviewed and created the firewall.
+Task 3: Create a Default Route
+I navigated to the virtual network created in Task 1.
+In the "Subnets" section, I selected the workload subnet.
+I created a new route table and added a route that directed all outbound traffic to the Azure Firewall.
+Task 4: Configure an Application Rule
+I accessed the Azure Firewall and went to the "Rules" tab.
+I created a new application rule collection.
+I added a rule that allowed only outbound traffic to www.bing.com.
+Task 5: Configure a Network Rule
+In the same "Rules" tab of the Azure Firewall, I created a new network rule collection.
+I added a rule to allow external DNS server lookups, specifying the necessary IP addresses and ports.
+Task 6: Configure DNS Servers
+I updated the DNS settings of the virtual network to use the external DNS servers.
+I ensured that the DNS queries were routed through the firewall by updating the DNS server settings of the virtual machines in each subnet.
+Task 7: Test the Firewall
+I logged into the virtual machine in the workload subnet.
+I verified that I could access www.bing.com but no other websites.
+I checked that DNS lookups for external sites were successful, confirming that the firewall was working as intended.
+Advantages to Any Organization
+Enhanced Security: By controlling both inbound and outbound traffic, the organization significantly reduces the risk of unauthorized access and data breaches.
+Centralized Management: Azure Firewall provides a centralized way to manage network security, making it easier to implement and enforce security policies.
+Compliance: Helps in meeting regulatory requirements by ensuring that network traffic is monitored and controlled.
+Scalability: Azure Firewall is highly scalable, making it suitable for organizations of any size.
+Cost-Effective: Reduces the need for multiple security appliances, lowering overall infrastructure costs.
+Implementing these steps helps ensure that network security policies are robust and well-managed, keeping the organization's data and systems safe.
+
